@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.samuraitravel.entity.House;
+import com.example.samuraitravel.form.ReservationInputForm;
 import com.example.samuraitravel.repository.HouseRepository;
-import com.example.samuraitravel.repository.ReservationInputForm;
 
 @Controller
 @RequestMapping("/houses")

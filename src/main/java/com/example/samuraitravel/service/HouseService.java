@@ -12,8 +12,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.example.samuraitravel.HouseEditForm;
 import com.example.samuraitravel.entity.House;
+import com.example.samuraitravel.form.HouseEditForm;
 import com.example.samuraitravel.form.HouseRegisterForm;
 import com.example.samuraitravel.repository.HouseRepository;
 

@@ -20,9 +20,9 @@
 			<div class="container pt-4 pb-5 samuraitravel-container">
 				<div class="row justify-content-center">
 					<div class="col-xl-5 col-lg-6 col-md-8">
-						<nav class="mb-4" style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+						<nav class="mb-4" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
 							<ol class="breadcrumb mb-0">
-								<li class="breadcrumb-item"><a th:href=@{/admin/houses}>民宿一覧</a></li>
+								<li class="breadcrumb-item"><a th:href="@{/admin/houses}">民宿一覧</a></li>
 								<li class="breadcrumb-item active" aria-current="page">民宿登録</li>
 							</ol>
 						</nav>
@@ -33,7 +33,7 @@
 							enctype="multipart/form-data">
 							<div class="form-group row mb-3">
 								<div class="col-md-4">
-									<label for="name" class="col-form-lavel text-md-left fw-bold">民宿名</label>
+									<label for="name" class="col-form-label text-md-left fw-bold">民宿名</label>
 								</div>
 								<div class="col-md-8">
 									<div th:if="${#fields.hasErrors('name')}" class="text-danger small mb-2"
@@ -44,7 +44,7 @@
 
 							<div class="form-group row mb-3">
 								<div class="col-md-4">
-									<label for="imageFile" class="col-form-lavel text-md-left fw-bold">民宿画像</label>
+									<label for="imageFile" class="col-form-label text-md-left fw-bold">民宿画像</label>
 								</div>
 								<div class="col-md-8">
 									<div th:if="${#fields.hasErrors('imageFile')}" class="text-danger small mb-2"
@@ -58,7 +58,7 @@
 
 							<div class="form-group row mb-3">
 								<div class="col-md-4">
-									<lavel for="description" class="col-form-lavel text-md-left fw-bold">説明</lavel>
+									<label for="description" class="col-form-label text-md-left fw-bold">説明</label>
 								</div>
 								<div class="col-md-8">
 									<div th:if="${#fields.hasErrors('description')}" class="text-danger small mb-2"
@@ -70,8 +70,8 @@
 
 							<div class="form-group row mb-3">
 								<div class="col-md-4">
-									<lavel for="price" class="col-form-lavel text-md-left fw-bold">宿泊料金（単位：円）
-									</lavel>
+									<label for="price" class="col-form-label text-md-left fw-bold">宿泊料金（単位：円）
+									</label>
 								</div>
 								<div class="col-md-8">
 									<div th:if="${#fields.hasErrors('price')}" class="text-danger small mb-2"
@@ -82,8 +82,8 @@
 
 							<div class="form-group row mb-3">
 								<div class="col-md-4">
-									<lavel for="capacity" clss="col-form-lavel text-md-left fw-bold">定員（単位：人）
-									</lavel>
+									<label for="capacity" clss="col-form-label text-md-left fw-bold">定員（単位：人）
+									</label>
 								</div>
 								<div class="col-md-8">
 									<div th:if="${#fields.hasErrors('capacity')}" class="text-danger small mb-2"
@@ -94,7 +94,7 @@
 
 							<div class="form-group row mb-3">
 								<div class="col-md-4">
-									<lavel for="postalCode" class="col-form-lavel text-md-left fw-bold">郵便番号</lavel>
+									<label for="postalCode" class="col-form-label text-md-left fw-bold">郵便番号</label>
 								</div>
 								<div class="col-md-8">
 									<div th:if="${#fields.hasErrors('postalCode')}" class="text-danger small mb-2"
@@ -105,7 +105,7 @@
 
 							<div class="form-group row mb-3">
 								<div class="col-md-4">
-									<label for="address" class="col-form-lavel text-md-left fw-bold">住所</label>
+									<label for="address" class="col-form-label text-md-left fw-bold">住所</label>
 								</div>
 								<div class="col-md-8">
 									<div th:if="${#fields.hasErrors('address')}" class="text-danger small mb-2"
